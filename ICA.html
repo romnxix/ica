@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8>
+       <title>Ibadan City Academy - School Portal</title>
+       <link rel="stylesheet" href="style.css">
+       <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                background-color: #f4f4f4;
+            }
+            header {
+                background-color: #003366;
+                color: rgba(255, 255, 255, 0.664);
+                padding: 20px;
+                text-align: center;
+            }
+            nav {
+                background-color: #0059b3;
+                padding: 10px;
+                text-align: center;
+            }
+            nav a {
+                color: white;
+                text-decoration: none;
+                margin: 0 15px;
+                font-weight: bold;
+            }
+            .container{
+                padding: 20px;
+            }
+            .login form, .announcements {
+                background-color: rgb(255, 255, 255);
+                padding: 20px;
+                margin: 20px 0;
+                border-radius: 5px;
+            }
+           Input[type="text"], input[type="password"]{ 
+                width: 100%;
+                padding: 10px;
+                margin: 10px 0;
+              }
+              input[type="submit"] {
+                background-color: #00660f;
+                color:rgb(255, 255, 255);
+                padding: 10px;
+                border: none;
+                cursor: pointer;
+              }
+              footer {
+                background-color: #003f66;
+                color: rgb(255, 255, 255);
+                text-align: center;
+                padding: 10px;
+              }
+         > </style>
+ </head>
+ <body>
+
+ <header>
+    <h1>Ibadan City Academy </h1>
+    <p>Welcome to the School Portal </p>
+ </header>
+
+ <nav>
+    <a href="#">Home</a>
+    <a href="#">Admissions</a>
+    <a href="#">Academics</a>
+    <a href="#">Contact</a>
+ </nav>
+
+ <div class="container">
+    <div class="login-form">
+        <h2>Student Login</h2>
+        <form action="login.php" method="post">
+            <label for="student-id">Student ID:</label>
+            <input type="text" id="student-id" name="student-id" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <input type="submit" value="Login">
+        </form>
+    </div>
+    
+    <div class="announcements">
+        <h2>Latest Announcements</h2>
+        <ul>
+            <li>Second term exams begin on May 6, 2025.</li>
+            <li>PTA meeting is scheduled for May 10,2025.</li>
+            <li>Third term resumption date: June 3, 2025.</li>
+        </ul>
+    </div>
+
+ </div>
+<footer>
+    &copy; 2025 Ibadan City Academy . All rights reserved.
+</footer>
+
+</body>
+</html>
